@@ -32,11 +32,13 @@
                 <td><div id="dates"></div></td>
             </tr>
             <tr>
-                <th>Days to analyze at once: <a href="#" data-tooltip="This controls the `window_size` api param. Use this to control how the query gets split up. For example, for a weekly uniques query, the smallest you can split up the query is into 7 days at a time - so you would pick 7."><img src="question_mark.png" class="tooltip_questionmark" /></th>
+                <th>Days to analyze at once: </th>
                 <td><div id="window_size"></div></td>
             </tr>
-                <th>Script params: <a href="#" data-tooltip="This is a global variable `params` that will be available to your script. This lets your scripts be flexible. For example, if you were writing Segmentation, you might add an 'event_name' parameter and filter for `if (event.name == params.event_name)` to your script."><img src="question_mark.png" class="tooltip_questionmark" /></th>
+            <tr>
+                <th>Script params:</th>
                 <td><input type="text" id="script_params" /></td>
+            </tr>
             <tr>
             </tr>
         </table>
@@ -48,7 +50,6 @@
 <br />
 
 <div id="output"></div>
-</div>
 </div>
 
 <script>
@@ -273,4 +274,3 @@ var _initialize_result_for_day = function() {
 
 </body>
 </html>
-`
